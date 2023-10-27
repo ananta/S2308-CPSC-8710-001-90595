@@ -81,3 +81,6 @@ Defining the game concept was our first hurdle, but once established, technical 
 
 Successes:
 Our structured approach to project management, combined with an agile mindset, proved invaluable. Assigning tasks based on strengths and maintaining open communication were key to our success. Collaboration tools like Git and GitHub facilitated seamless teamwork. Our tech stack, including TypeScript, React.js, Next.js, Leaflet, Tailwind CSS, and Supabase, empowered our development process.
+
+Lessons Learned:
+Flexibility and effective communication were crucial lessons. Adapting to changes and embracing challenges enhanced our problem-solving skills. Thorough testing and innovative solutions ensured the reliability of our application. PawGuesser not only showcased our technical proficiency but also our ability to overcome obstacles as a team.
