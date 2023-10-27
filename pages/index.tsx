@@ -92,6 +92,15 @@ export default function Home() {
             <QuestionMarkIcon sx={{ mr: 1 }} /> How to Play
           </div>
         </div>
+
+        <div className="flex gap-2 font-Poppins font-semibold">
+          <div
+            onClick={() => router.push("/leaderboards")}
+            className="cursor-pointer flex px-4 py-4 items-center boxShadow text-black bg-gray-200 hover:scale-105 transition-all"
+          >
+            <BarChartIcon sx={{ mr: 1 }} /> {"Leaderboards"}
+          </div>
+        </div>
       </main>
     </>
   );

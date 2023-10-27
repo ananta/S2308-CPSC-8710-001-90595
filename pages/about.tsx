@@ -9,7 +9,7 @@ const AboutPage: React.FC<{}> = () => {
       </Head>
       <main className="h-screen w-screen flex justify-center items-center gap-4 flex-col bg-psauGreen ">
         <h1 className="text-center text-4xl sm:text-7xl text-white font-Poppins font-bold tracking-wide">
-          TigerGeoGuessr
+          PawGuessr
         </h1>
         <div className="text-white text-center">
           Built with ❤️ using Next.js & Typescript

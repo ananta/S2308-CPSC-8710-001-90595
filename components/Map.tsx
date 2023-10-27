@@ -18,12 +18,21 @@ import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 
+
+type SupabaseInsertedDataType = {
+  created_at: string,
+  id: number,
+  name: string,
+  score: string
+}
+
 const Map = () => {
   const playerMarkerRef = useRef<Marker>(null!);
   const guessMarkerRef = useRef<Marker>(null!);
   const router = useRouter();
 
   const [score, SetScore] = useState<number>(0);
+  const [missedScore, SetMissedScore] = useState<number>(0);
   const [polyLineColor, setPolyLineColor] = useState<string>("#22c55e");
   const [locationReveal, setLocationReveal] = useState<boolean>(false);
   const [playerMarkerLocation, setPlayerMarkerLocation] = useState<LatLngExpression | null>(null);
@@ -31,7 +40,6 @@ const Map = () => {
   const [currentGuessLocation, setCurrentGuessLocation] = useState<GuessLocation | null>(null);
 
   const nextGuessHandler = async () => {
-    console.log(locationsToGuess.length);
     setLocationReveal(false);
     setPlayerMarkerLocation(null);
 
@@ -54,8 +62,9 @@ const Map = () => {
     if (currentGuessLocation && playerMarkerLocation) {
       const res = getDistance(latLangToArray(currentGuessLocation.location), playerMarkerLocation);
       const distance = Math.trunc(res.distance);
-      if (distance > 50) {
+      if (distance > 100) {
         toast.error(`😟 Your guess was ${distance}m away from the location`);
+        SetMissedScore((p) => p + 1);
       } else {
         toast.success(`🌟 Your guess was ${distance}m away from the location`);
         SetScore((p) => p + 1);
@@ -88,16 +97,17 @@ const Map = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [nameModal, setNameModal] = useState(false);
   const handleSubmitScore = async () => {
-    const id = uniqid(nickname.replace(/\s/g, ""));
     setIsLoading(true);
     try {
-      await axios.put("/api/create", { score: score, id, name: nickname });
+      const data = await axios.put("/api/create", { score: score, name: nickname });
+      console.log({data})
+      const insertedData: SupabaseInsertedDataType = data.data.data.data[0];
+      router.push(`/finished?id=${insertedData.id}`);
     } catch (error) {
-      router.push(`/finished?id=${id}`);
+      toast.error("Something went wrong saving the score to the database.")
+    } finally{
+      setIsLoading(false);
     }
-    toast.success("Score Submitted");
-    router.push(`/finished?id=${id}`);
-    setIsLoading(false);
   };
   const handleOpenNameModal = () => setNameModal(true);
   const handleCloseNameModal = () => setNameModal(false);
@@ -185,8 +195,9 @@ const Map = () => {
 
       <div style={{display: 'flex', position: 'absolute', bottom: 20, left: 0,  justifyContent: 'center', alignItems: 'center'}}>
         <div style={{ display: 'flex', justifyContent: 'space-between', width:'400px'}}>
-          <div className="bg-psauGreen text-white" style={{zIndex: 1000, padding: 20}}>
-            Current Score:  <span className="text-bold">{score} / 30</span>
+          <div className="bg-psauGreen text-white" style={{zIndex: 1000, padding: 20}}> 
+            <br/>Guesses Remaining:  <span className="text-bold">{locationsToGuess.length}</span> 
+            <br/>Current Score:  <span className="text-bold">{score}</span> 
           </div>
         </div>
       </div>
