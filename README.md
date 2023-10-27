@@ -77,9 +77,10 @@ Inspired by the popular game "GeoGuessr," our project is designed to not only en
 ## Developers
 
 A group of enthusiastic developers worked together to create this project, which aims to create an browser-based geography game. Introducing the project's developers:
-Ananta Bastola
-Bharath Chittamuru
-Tarun Prathipati
+
+. Ananta Bastola
+. Bharath Chittamuru
+. Tarun Prathipati
 
 
 ## Reflection
