@@ -206,6 +206,7 @@ const Map = () => {
               src={currentGuessLocation?.pictureUrl || ""}
               width={600}
               height={400}
+              style={{maxHeight: 600 }}
               className='w-auto h-auto border-white border-8'
             />
 
