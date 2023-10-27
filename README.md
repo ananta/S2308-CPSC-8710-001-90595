@@ -73,6 +73,15 @@ Inspired by the popular game "GeoGuessr," our project is designed to not only en
 
 - Once updated, re-deploy your next.js application and your app should be live and should be accessible with vercel's assigneed url
 
+
+## Developers
+
+A group of enthusiastic developers worked together to create this project, which aims to create an browser-based geography game. Introducing the project's developers:
+Ananta Bastola
+Bharath Chittamuru
+Tarun Prathipati
+
+
 ## Reflection
 Creating PawGuesser was a rewarding journey marked by learning and collaboration. Our team navigated challenges and celebrated successes while building this innovative game.
 
@@ -84,7 +93,7 @@ Successes:
 Our structured approach to project management, combined with an agile mindset, proved invaluable. Assigning tasks based on strengths and maintaining open communication were key to our success. Collaboration tools like Git and GitHub facilitated seamless teamwork. Our tech stack, including TypeScript, React.js, Next.js, Leaflet, Tailwind CSS, and Supabase, empowered our development process.
 
 Lessons Learned:
-Flexibility and effective communication were crucial lessons. Adapting to changes and embracing challenges enhanced our problem-solving skills. Thorough testing and innovative solutions ensured the reliability of our application. PawGuesser not only showcased our technical proficiency but also our ability to overcome obstacles as a team.
+Flexibility and effective communication were crucial lessons. Adapting to changes and embracing challenges enhanced our problem-solving skills. Thorough testing and innovative solutions ensured the reliability of our application. PawGuesser not only showcased our technical proficiency but also our ability to overcome obstacles as a team. One of the most significant lessons we learned during this journey was the importance of flexibility and effective communication. We had to adapt to changes and embrace challenges as they arose. This flexibility enhanced our problem-solving skills and allowed us to find innovative solutions to the issues we encountered. It was through this flexibility that we were able to ensure the reliability of our application. Thorough testing and creative problem-solving were vital in making PawGuesser a stable and enjoyable game.
 
 Conclusion:
 PawGuesser stands as a testament to our growth in the technology landscape. Through teamwork, adaptability, and a robust tech stack, we transformed challenges into opportunities. This project not only resulted in a fun and educational game but also strengthened our collaborative spirit and technical expertise.
