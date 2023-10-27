@@ -74,4 +74,7 @@ Inspired by the popular game "GeoGuessr," our project is designed to not only en
 - Once updated, re-deploy your next.js application and your app should be live and should be accessible with vercel's assigneed url
 
 ## Reflection
-Creating PawGuesser was a rewarding journey marked by learning and collaboration. Our team navigated challenges and celebrated successes while building this innovative game. 
+Creating PawGuesser was a rewarding journey marked by learning and collaboration. Our team navigated challenges and celebrated successes while building this innovative game.
+
+Challenges:
+Defining the game concept was our first hurdle, but once established, technical challenges emerged. Integrating maps and connecting the frontend to the backend demanded careful coding. Estimating task durations and balancing functionality with design posed difficulties.
