@@ -78,3 +78,6 @@ Creating PawGuesser was a rewarding journey marked by learning and collaboration
 
 Challenges:
 Defining the game concept was our first hurdle, but once established, technical challenges emerged. Integrating maps and connecting the frontend to the backend demanded careful coding. Estimating task durations and balancing functionality with design posed difficulties.
+
+Successes:
+Our structured approach to project management, combined with an agile mindset, proved invaluable. Assigning tasks based on strengths and maintaining open communication were key to our success. Collaboration tools like Git and GitHub facilitated seamless teamwork. Our tech stack, including TypeScript, React.js, Next.js, Leaflet, Tailwind CSS, and Supabase, empowered our development process.
