@@ -95,11 +95,6 @@ export const GuessLocationList: GuessLocation[] = [
   },
   {
     imgProvider: pawGuesserTeam,
-    location: [34.676825, -82.834975],
-    pictureUrl: "/20231024_170515.jpg"
-  },
-  {
-    imgProvider: pawGuesserTeam,
     location: [34.677114, -82.835222],
     pictureUrl: "/D_HALL.jpg"
   },
@@ -125,18 +120,8 @@ export const GuessLocationList: GuessLocation[] = [
   },
   {
     imgProvider: pawGuesserTeam,
-    location: [34.679956, -82.836806],
-    pictureUrl: "/20231024_174926.jpg"
-  },
-  {
-    imgProvider: pawGuesserTeam,
     location: [34.67948, -82.839851],
     pictureUrl: "/20231024_180116.jpg"
-  },
-  {
-    imgProvider: pawGuesserTeam,
-    location: [34.677052, -82.837823],
-    pictureUrl: "/20231024_175407.jpg"
   },
   {
     imgProvider: pawGuesserTeam,
@@ -152,11 +137,6 @@ export const GuessLocationList: GuessLocation[] = [
     imgProvider: pawGuesserTeam,
     location: [34.679115, -82.843297],
     pictureUrl: "/20231024_183842.jpg"
-  },
-  {
-    imgProvider: pawGuesserTeam,
-    location: [34.674169, -82.83451],
-    pictureUrl: "/20231024_173052.jpg"
   },
   {
     imgProvider: pawGuesserTeam,
